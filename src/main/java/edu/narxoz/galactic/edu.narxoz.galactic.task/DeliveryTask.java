@@ -1,8 +1,8 @@
 package edu.narxoz.galactic.edu.narxoz.galactic.task;
 
-import edu.narxoz.galactic.bodies.CelestialBody;
-import edu.narxoz.galactic.cargo.Cargo;
-import edu.narxoz.galactic.drones.Drone;
+import edu.narxoz.galactic.edu.narxoz.galactic.bodies.CelestialBody;
+import edu.narxoz.galactic.edu.narxoz.galactic.cargo.Cargo;
+import edu.narxoz.galactic.edu.narxoz.galactic.drones.Drone;
 
 public class DeliveryTask {
 
@@ -19,6 +19,7 @@ public class DeliveryTask {
         this.state = TaskState.CREATED;
         this.assignedDrone = null;
     }
+
     public CelestialBody getOrigin() {
         return origin;
     }
@@ -30,6 +31,7 @@ public class DeliveryTask {
     public Cargo getCargo() {
         return cargo;
     }
+
     public TaskState getState() {
         return state;
     }
