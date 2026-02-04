@@ -23,7 +23,7 @@ public class Main {
         String cargo1 = sc.next();
 
         Planet earth = new Planet("Earth", 0, 0, "Oxygen");
-        SpaceStation iss = new SpaceStation("ISS", 100, 0, 10);
+        SpaceStation iss = new SpaceStation("ISS", 100, 0);
 
         Cargo cargo = new Cargo(weight, cargo1);
 
