@@ -8,8 +8,4 @@ public class SpaceStation extends CelestialBody {
         super(name, x, y);
         this.level = level;
     }
-
-    public int getLevel() {
-        return level;
-    }
 }

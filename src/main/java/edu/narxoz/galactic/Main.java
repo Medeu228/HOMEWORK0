@@ -1,5 +1,7 @@
 package edu.narxoz.galactic;
 
+import java.util.Scanner;
+
 import edu.narxoz.galactic.edu.narxoz.galactic.bodies.Planet;
 import edu.narxoz.galactic.edu.narxoz.galactic.bodies.SpaceStation;
 import edu.narxoz.galactic.edu.narxoz.galactic.cargo.Cargo;
@@ -13,10 +15,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Planet earth = new Planet("Earth", 0, 0, "Oxygen");
-        SpaceStation iss = new SpaceStation("ISS", 100, 0, 5);
+        Scanner sc = new Scanner(System.in);
 
-        Cargo cargo = new Cargo(50, "Supplies");
+        System.out.println("Enter cargo weight: ");
+        int weight = sc.nextInt();
+        System.out.println("Enter cargo type: ");
+        String cargo1 = sc.next();
+
+        Planet earth = new Planet("Earth", 0, 0, "Oxygen");
+        SpaceStation iss = new SpaceStation("ISS", 100, 0, 10);
+
+        Cargo cargo = new Cargo(weight, cargo1);
 
         LightDrone light = new LightDrone("LD-1", 20);
         HeavyDrone heavy = new HeavyDrone("HD-1", 100);
